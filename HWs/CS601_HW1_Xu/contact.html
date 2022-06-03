@@ -1,7 +1,7 @@
 <!-- 
     
-This is the main page for CS601 HW1, which is only using pure HTML to build the structure of the website.
-@file index.html
+This is the contact page for CS601 HW1, which is only using pure HTML to build the structure of the website.
+@file contact.html
 @author Pengcheng Xu (pcxu@bu.edu)
 
 -->
@@ -12,7 +12,7 @@ This is the main page for CS601 HW1, which is only using pure HTML to build the 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS601_HW1</title>
+    <title>Contact Me</title>
     <link rel="icon" href="./imgs/Peng-icon.webp">
 </head>
 
@@ -28,6 +28,7 @@ This is the main page for CS601 HW1, which is only using pure HTML to build the 
                 <li><a href="blog.html">Blog</a> </li>
                 <li> <a href="project.html">Project</a> </li>
                 <li> <a href="contact.html">Contact</a> </li>
+
             </ul>
         </nav>
 
@@ -39,29 +40,30 @@ This is the main page for CS601 HW1, which is only using pure HTML to build the 
     <hr>
 
     <!-- Begin of main, which contains the main content -->
-    <main> 
-        <header>
-            <h1>Welcome To Pengcheng's Website</h1>
-        </header>
+    <main>
 
         <!-- Requirement #1: 2 paragraphs of text -->
-        <!-- Requirement #2: External Links -->
         <section>
-            <article>
-                <header> <h2> Self Introduction </h2> </header>
-                <!-- Requirement #4: an image on the page-->
-                <img src="./imgs/profile.jpg" alt="Pengcheng's profile pic" width="200">
-                <p>
-                    Hey! I'm Pengcheng Xu. Before coming here, I got my master’s degree in financial engineering at Lehigh University, Pennsylvania. And spent one year in the CS PhD program at North Carolina State university.
-                </p>
-                <p>
-                    Somebody thinks I'm crazy, but I have no regret. I'm open to new people, ideas, and want to explore more.
-                </p>
-                <p>
-                    <!-- The following contains a link to an external website -->
-                    I like working out, swimming, and basketball. And my favorite soccer team is <a href="https://www.inter.it/en" target="_blank" title="Click me to visit Inter Milan">Inter Milan</a>.
-                </p>
-            </article>
+            <header> <h2>Contact Page</h2> </header>
+            <!-- Requirement #4: an image on the page-->
+            <img src="imgs/contact-me.png" alt="contact-me" width="500">
+            <p>I'm open to all new stuff and people.</p>
+            <p>Below is the contact page, feel free to use it when needed. :p</p>
+        </section>
+
+        <section>
+            <form action="mailto:pcxu@bu.edu" method="get" enctype="text/plain">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <label for="username">Name: </label><input type="text" id="username" name="Name" required> <br><br>
+                    <label for="useremail">Email: </label> <input type="email" id="useremail" name="Email" required> <br><br>
+                    <label for="textbox">Message: </label> <br>
+                    <textarea name="message" id="textbox" cols="30" rows="10" maxlength="150" placeholder="Leave your message here"></textarea> <br><br>
+                    <label for="messageDate">Date: </label><input type="date" id="messageDate"> <br><br>
+                    <input type="submit">
+                </fieldset>
+            </form>
+
         </section>
     </main> <!--End of main -->
     <hr>

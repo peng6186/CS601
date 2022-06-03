@@ -14,31 +14,59 @@ This is the blog page for CS601 HW1, which is only using pure HTML to build the 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
 </head>
+
 <body>
+
+    <!-- Requirement #3: Pages using new HTML5 structures -->
     <!-- Begin of header, which inclues nav bar -->
     <header>
+        <!-- Requirement #7: consistant nav bar -->
         <nav>
             <ul>
                 <li> <a href="index.html">Home</a> </li>
                 <li><a href="blog.html">Blog</a> </li>
                 <li> <a href="project.html">Project</a> </li>
+                <li> <a href="contact.html">Contact</a> </li>
             </ul>
         </nav>
+
+        <div class="homework-progress">
+            <label for="hwProgress">Homework Progress: 1 / 6</label> <br>
+            <progress max="6" min="0" value="1" id="hwProgress">1</progress>
+        </div>
     </header> <!-- End of header -->
     <hr>
 
     <!-- Begin of main, which contains the main content -->
     <main> 
         <section>
+
+            <!-- Requirement #1: 2 paragraphs of text -->
             <article>
-                <header> <h2>What I could like to include in this course </h2> </header>
+                <header> <h2>What I would like to include in this course </h2> </header>
+                <!-- Requirement #4: an image on the page-->
+                <img src="imgs/react.webp" alt="React" width="300">
+                <img src="imgs/nodejs.png" alt="nodejs">
+                <p> I'm interested in the web-development, so I've learned some front-end stuff on my own (e.g. html, css, and js). </p>
+                <p> But I didn't receive formal and professional training, though. So I'd like to hone my skill further in this course. And In terms of content, It'd be better if we could pay more attention to some widely-used frameworks (e.g. React, Node.js), also cover some interaction between front-end and back-end.</p>
+
+                <p> The following is the summary of the list of What I'd like to cover in this course, and the number of starts indicates the level of desire. </p>
+                <!-- Requirement #6: The list element (unordered) -->
+                <ul>
+                    <li>Front-end frameworks (e.g. React): ⭐️⭐️⭐️⭐️⭐️</li>
+                    <li>Back-end Language: ⭐️⭐️⭐️⭐️</li>
+                    <li>Interaction between front-end and back-end: ⭐️⭐️⭐️⭐️</li>
+                </ul>
             </article>
         </section>
     </main> <!--End of main -->
+    <hr>
 
     <!--Begin of footer, which mainly inclues copyright info -->
     <footer> 
-
+        <p>
+            <strong>&copy; 2022 Pengcheng Xu. All rights reserved.</strong>
+        </p>
     </footer> <!--End of footer -->
 </body>
 </html>

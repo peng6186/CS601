@@ -14,30 +14,43 @@ This is the project page for CS601 HW1, which is only using pure HTML to build t
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
 </head>
+
 <body>
+
+    <!-- Requirement #3: Pages using new HTML5 structures -->
     <!-- Begin of header, which inclues nav bar -->
     <header>
+        <!-- Requirement #7: consistant nav bar -->
         <nav>
             <ul>
                 <li> <a href="index.html">Home</a> </li>
                 <li><a href="blog.html">Blog</a> </li>
                 <li> <a href="project.html">Project</a> </li>
+                <li> <a href="contact.html">Contact</a> </li>
             </ul>
         </nav>
+
+        <div class="homework-progress">
+            <label for="hwProgress">Homework Progress: 1 / 6</label> <br>
+            <progress max="6" min="0" value="1" id="hwProgress">1</progress>
+        </div>
     </header> <!-- End of header -->
     <hr>
 
     <!-- Begin of main, which contains the main content -->
     <main> 
         <header> <h1>Collection of Projects</h1> </header>
+
+        <!-- Requirement #1: 2 paragraphs of text -->
         <section>
             <article>
                 <header> <h2>Half-adder implementation using logic gates</h2> </header>
                 <p>One of my habits is playing around with some low-lever stuff, which is really interesting if you could build some components on your own. </p>
                 <p>In this project, I implement a half-adder (containing two inputs compared, which is usually used in least significant bit addition) using bread board, transistor, 7408 IC (contains four AND gates), 7486 IC (contains four XOR gates)</p>
                 <p>The following pic and truth table show the idea, where the green LED represents the sum bit while the red LED represents the carry bit. If eigher input is true (when press the button), the green LED will light up; while when both inputs are true, the red LED will be lit (means there's a carry-out)</p>
+                <!-- Requirement #4: the image element -->
                 <img src="./projects/low-level/half-adder.jpeg" alt="The pic of implementation of half-adder using logic gates" width="300"> <br>
-                
+                <!-- Requirement #5: the table element -->
                 <table> <!-- Truth table for half-adder -->
                     <tr>
                         <th>Input: a |</th>
@@ -72,6 +85,7 @@ This is the project page for CS601 HW1, which is only using pure HTML to build t
                 </table>   <!-- End of the table -->
 
                 <p>The following video shows the real-time presentation.</p>
+                <!-- Requirement #8: the video element -->
                 <video controls height="350px" poster="./projects/low-level/half-adder-poster.jpeg">
                     <source src="./projects/low-level/half-adder.mp4" type="video/mp4" >
                 </video>
